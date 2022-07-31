@@ -1,0 +1,297 @@
+{
+  "requests": [
+    {
+      "insertSectionBreak": {
+        "sectionType": "NEXT_PAGE",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "insertTable": {
+        "rows": 7,
+        "columns": 2,
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "4",
+        "location": {
+          "index": 37
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Version du modèle",
+        "location": {
+          "index": 35
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "30/04/2022",
+        "location": {
+          "index": 32
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Date de mise à jour",
+        "location": {
+          "index": 30
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "2023",
+        "location": {
+          "index": 27
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Promotion",
+        "location": {
+          "index": 25
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "User stories, fonctionnalités, tâches, gestion de projet, sprint, definition of done",
+        "location": {
+          "index": 22
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Mots-clés",
+        "location": {
+          "index": 20
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "projet.permasoft@gmail.com",
+        "location": {
+          "index": 17
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Email",
+        "location": {
+          "index": 15
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Lal Joncoux-aydin\nCamille Sayous\nLouis Losson\nZoe Lenglemetz\nJean-Christophe Della Giusta\nNoemie Foncin\nRachid Lhasnaoui",
+        "location": {
+          "index": 12
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Auteur",
+        "location": {
+          "index": 10
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "IOT, algorithmie et web",
+        "location": {
+          "index": 7
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Titre",
+        "location": {
+          "index": 5
+        }
+      }
+    },
+    {
+      "updateTextStyle": {
+        "textStyle": {
+          "bold": true,
+          "fontSize": {
+            "magnitude": 11,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.26,
+                "green": 0.26,
+                "red": 0.26
+              }
+            }
+          },
+          "weightedFontFamily": {
+            "fontFamily": "Neuton",
+            "weight": 400
+          },
+          "underline": false
+        },
+        "fields": "fontSize,foregroundColor,weightedFontFamily,bold,underline",
+        "range": {
+          "startIndex": 5,
+          "endIndex": 380
+        }
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "paragraphStyle": {
+          "alignment": "CENTER"
+        },
+        "fields": "alignment",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 380
+        }
+      }
+    },
+    {
+      "updateTableColumnProperties": {
+        "tableStartLocation": {
+          "index": 2
+        },
+        "columnIndices": [
+          0
+        ],
+        "tableColumnProperties": {
+          "widthType": "FIXED_WIDTH",
+          "width": {
+            "magnitude": 130,
+            "unit": "PT"
+          }
+        },
+        "fields": "*"
+      }
+    },
+    {
+      "updateTableCellStyle": {
+        "tableCellStyle": {
+          "backgroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.88,
+                "red": 0.88,
+                "green": 0.70
+              }
+            }
+          }
+        },
+        "fields": "backgroundColor",
+        "tableRange": {
+          "tableCellLocation": {
+            "tableStartLocation": {
+              "index": 2
+            },
+            "columnIndex": 1,
+            "rowIndex": 0
+          },
+          "columnSpan": 1,
+          "rowSpan": 7
+        }
+      }
+    },
+    {
+      "updateTableCellStyle": {
+        "tableCellStyle": {
+          "backgroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.93,
+                "red": 0.84,
+                "green": 0.77
+              }
+            }
+          }
+        },
+        "fields": "backgroundColor",
+        "tableRange": {
+          "tableCellLocation": {
+            "tableStartLocation": {
+              "index": 2
+            },
+            "columnIndex": 0,
+            "rowIndex": 0
+          },
+          "columnSpan": 1,
+          "rowSpan": 7
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "I - Description du document\n",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "updateTextStyle": {
+        "textStyle": {
+          "bold": true,
+          "fontSize": {
+            "magnitude": 24,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0,
+                "red": 0,
+                "green": 0
+              }
+            }
+          },
+          "weightedFontFamily": {
+            "fontFamily": "Neuton",
+            "weight": 400
+          },
+          "underline": false
+        },
+        "fields": "bold,fontSize,foregroundColor,weightedFontFamily,underline",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 28
+        }
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "paragraphStyle": {
+          "alignment": "CENTER"
+        },
+        "fields": "alignment",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 28
+        }
+      }
+    }
+  ]
+}

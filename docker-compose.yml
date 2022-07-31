@@ -1,0 +1,18 @@
+version: '3'
+
+services: 
+    auto_pld:
+        build: ./
+        container_name: auto_pld
+        ports:
+            - "3000:3000"
+        networks: 
+            - web
+        restart: on-failure
+        command: npm run start
+
+
+networks: 
+    web:
+        driver: bridge 
+

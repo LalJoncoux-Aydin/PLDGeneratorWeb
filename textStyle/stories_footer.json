@@ -1,0 +1,62 @@
+{
+  "requests": [
+    {
+      "insertSectionBreak": {
+        "location": {
+          "index": 1
+        },
+        "sectionType": "CONTINUOUS"
+      }
+    },
+    {
+      "insertText": {
+        "text": "VII - Tableaux stories\n",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "updateTextStyle": {
+        "textStyle": {
+          "bold": true,
+          "fontSize": {
+            "magnitude": 24,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0,
+                "red": 0,
+                "green": 0
+              }
+            }
+          },
+          "weightedFontFamily": {
+            "fontFamily": "Neuton",
+            "weight": 400
+          },
+          "underline": false
+        },
+        "fields": "bold,fontSize,foregroundColor,weightedFontFamily,underline",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 23
+        }
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "paragraphStyle": {
+          "alignment": "CENTER"
+        },
+        "fields": "alignment",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 23
+        }
+      }
+    }
+  ]
+}

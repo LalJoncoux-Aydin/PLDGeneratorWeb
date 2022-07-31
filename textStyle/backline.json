@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "insertSectionBreak": {
+        "sectionType": "CONTINUOUS",
+        "location": {
+          "index": 1
+        }
+      }
+    }
+  ]
+}

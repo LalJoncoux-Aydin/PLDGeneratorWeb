@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href="/"><h1 class="title">Orga projet</h1></a>
+
+    <div class="main">
+      <div class="main_left">
+        <div class="nav_container {{ nav == 'all' ? 'nav_container_selected' : ''}}">
+          <a href="/" class="nav {{ nav == 'all' ? 'nav_selected' : ''}}" onmouseover="document.getElementById('img_nav_all').src='images/all.png'" onmouseout="document.getElementById('img_nav_all').src='images/all_black.png'">
+            {% if nav == 'all' %}
+              <img src="/images/all.png">
+            {% else %}
+              <img id="img_nav_all" src="/images/all_black.png">
+            {% endif %}
+            <p>Total</p>
+          </a>
+        </div>
+        <div class="nav_container {{ nav == 'web' ? 'nav_container_selected' : ''}}">
+          <a href="/web" class="nav {{ nav == 'web' ? 'nav_selected' : ''}}" onmouseover="document.getElementById('img_nav_web').src='images/world-wide-web.png'" onmouseout="document.getElementById('img_nav_web').src='images/world-wide-web_black.png'">
+            {% if nav == 'web' %}
+              <img src="/images/world-wide-web.png">
+            {% else %}
+              <img id="img_nav_web" src="/images/world-wide-web_black.png">
+            {% endif %}
+            <p>Web</p>
+          </a>
+        </div>
+        <div class="nav_container {{ nav == 'mobile' ? 'nav_container_selected' : ''}}">
+          <a href="/mobile" class="nav {{ nav == 'mobile' ? 'nav_selected' : ''}}" onmouseover="document.getElementById('img_nav_mobile').src='images/smartphone-call.png'" onmouseout="document.getElementById('img_nav_mobile').src='images/smartphone-call_black.png'">
+            {% if nav == 'mobile' %}
+              <img src="/images/smartphone-call.png">
+            {% else %}
+              <img id="img_nav_mobile" src="/images/smartphone-call_black.png">
+            {% endif %}
+            <p>Mobile</p>
+          </a>
+        </div>
+        <div class="nav_container {{ nav == 'api' ? 'nav_container_selected' : ''}}">
+          <a href="/api" class="nav {{ nav == 'api' ? 'nav_selected' : ''}}" onmouseover="document.getElementById('img_nav_api').src='images/api.png'" onmouseout="document.getElementById('img_nav_api').src='images/api_black.png'">
+            {% if nav == 'api' %}
+              <img src="/images/api.png">
+            {% else %}
+              <img id="img_nav_api" src="/images/api_black.png">
+            {% endif %}
+            <p>API</p>
+          </a>
+        </div>
+        <div class="nav_container {{ nav == 'algo' ? 'nav_container_selected' : ''}}">
+          <a href="/algo" class="nav {{ nav == 'algo' ? 'nav_selected' : ''}}" onmouseover="document.getElementById('img_nav_algo').src='images/neural.png'" onmouseout="document.getElementById('img_nav_algo').src='images/neural_black.png'">
+            {% if nav == 'algo' %}
+              <img src="/images/neural.png">
+            {% else %}
+              <img id="img_nav_algo" src="/images/neural_black.png">
+            {% endif %}
+            <p>Algo</p>
+          </a>
+        </div>
+      </div>
+      <div class="main_right">
+        {% block body %}{% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
