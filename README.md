@@ -24,7 +24,6 @@ Open an issue pls
 V1 :
 - Can create/connect to account.
 - Can connect to Github or Gitlab + Google Document.
-- Can modify the labels of your issues
 - Can select the number of repository i want to git clone
 - Can access all the issues, their details, can open them to see details, can search for it, can modify it.
 
