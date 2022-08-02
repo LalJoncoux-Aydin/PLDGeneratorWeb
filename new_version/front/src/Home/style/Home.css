@@ -1,0 +1,6 @@
+.MainContainerConnexion {
+  background-color: #78b6fe;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

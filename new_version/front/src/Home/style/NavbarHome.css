@@ -1,0 +1,13 @@
+.MainContainerConnexion .TitleContainerConnexion {
+
+}
+
+.MainContainerConnexion .TitleContainerConnexion .TitleConnexion {
+  text-align: center;
+  margin: 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: #3e5d9c9c;
+  font-weight: 900;
+  font-size: 25px;
+}
