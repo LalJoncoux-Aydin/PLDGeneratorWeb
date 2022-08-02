@@ -8,15 +8,14 @@
     margin: 0;
     padding-top: 90px;
     padding-bottom: 90px;
-    color: #2c519b;
-    text-shadow: 1px 1px #b4bfd4c7;
+    color: #3e5d9c9c;
     font-weight: 900;
+    font-size: 25px;
   }
 
   .MainContainerConnexion .ContainerConnexion {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -26,9 +25,8 @@
     display: flex;
     flex-direction: column;
     border-radius: 13px;
-    box-shadow: 0px 5px 2000px 0px rgb(57 60 147 / 50%);
     background-color: white;
-    transition: 0.12s;
+    transition: 0.15s;
   }
 
   .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion:hover {
@@ -60,16 +58,9 @@
       padding: 6px 11px;
     }
 
-    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .InputIDConnexion {
-      margin: 8px 0 22px;
-    }
-
-    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .InputPwConnexion {
-      margin: 8px 0 54px;
-    }
 
     .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion button {
-      background-color: #959ac7;
+      background-color: #89aaff;
       color: white;
       border: 1px solid #e0defa;
       border-radius: 15px;
@@ -91,14 +82,18 @@
 
     .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .SmallerContainerTitleConnexion {
       text-align: center;
-      color: #959ac7;
-      text-shadow: 1px 1px #f4f4f4;
+      color: #5081d1b3;
       font-weight: 500;
-      font-size: 30px;
+      font-size: 29px;
       margin-block-start: 0px;
       margin-block-end: 0px;
       margin: 0;
       margin-bottom: 35px;
+      font-family: cursive;
+    }
+
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion:hover .SmallerContainerTitleConnexion {
+      color: #236cdcd9;
     }
 
     .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .FormConnexion {
@@ -108,9 +103,9 @@
     }
 
       .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .FormConnexion .InputIDConnexion {
-        margin: 8px 0 12px;
+        margin: 8px 0 22px;
       }
 
       .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .FormConnexion .InputPwConnexion {
-        margin: 8px 0 25px;
+        margin: 8px 0 55px;
       }
