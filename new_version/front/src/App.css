@@ -1,10 +1,16 @@
 .MainContainerConnexion {
   background-color: #78b6fe;
+  height: 100%;
 }
 
   .MainContainerConnexion .TitleConnexion {
     text-align: center;
     margin: 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: #2c519b;
+    text-shadow: 1px 1px #b4bfd4c7;
+    font-weight: 900;
   }
 
   .MainContainerConnexion .ContainerConnexion {
@@ -15,10 +21,96 @@
   }
 
   .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion {
-
+    width: 40%;
+    padding: 45px 85px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    box-shadow: 0px 5px 2000px 0px rgb(57 60 147 / 50%);
+    background-color: white;
+    transition: 0.12s;
   }
+
+  .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion:hover {
+    box-shadow: 0px 0px 17px 0px rgb(0 0 0 / 50%);
+    cursor: pointer;
+  }
+
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion h2,
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion label,
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion input {
+      color: #959ac7;
+
+    }
+
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion h2 {
+      text-align: center;
+      text-shadow: 1px 1px #f4f4f4;
+      font-weight: 500;
+      font-size: 30px;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      margin: 0;
+      margin-bottom: 35px;
+    }
+
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion input {
+      border-radius: 15px;
+      border: 1px solid #959ac7;
+      padding: 6px 11px;
+    }
+
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .InputIDConnexion {
+      margin: 8px 0 22px;
+    }
+
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .InputPwConnexion {
+      margin: 8px 0 54px;
+    }
+
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion button {
+      background-color: #959ac7;
+      color: white;
+      border: 1px solid #e0defa;
+      border-radius: 15px;
+      padding: 15px 10px;
+      width: 44%;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      box-shadow: 0px 2px 4px 1.5px #3d3dd147;
+      cursor: pointer;
+      transition: 0.17s;
+    }
+
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion button:hover {
+      background-color: #236cdcd9;
+      color: white;
+      border: 1px solid #8ab9ffd9;
+    }
+
+    .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .SmallerContainerTitleConnexion {
+      text-align: center;
+      color: #959ac7;
+      text-shadow: 1px 1px #f4f4f4;
+      font-weight: 500;
+      font-size: 30px;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      margin: 0;
+      margin-bottom: 35px;
+    }
 
     .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .FormConnexion {
       display: flex;
       flex-direction: column;
+      cursor: pointer;
     }
+
+      .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .FormConnexion .InputIDConnexion {
+        margin: 8px 0 12px;
+      }
+
+      .MainContainerConnexion .ContainerConnexion .SmallerContainerConnexion .FormConnexion .InputPwConnexion {
+        margin: 8px 0 25px;
+      }
