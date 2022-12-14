@@ -11,15 +11,6 @@ PLD (Project Log Document) generator / creator. Automatically gets Github or Git
 npm update
 npm start
 
-## Usage
-1 - Create an account
-2 - Connect to Github or Gitlab + Google Document
-(Optional : 3 - Code your own PLD syntax)
-4 - Generate my PLD
-
-## Support
-Open an issue pls
-
 ## Roadmap
 V1 :
 - Can create/connect to account.
