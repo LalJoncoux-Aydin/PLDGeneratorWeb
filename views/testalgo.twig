@@ -1,0 +1,26 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<h2 class="subtitle">Test algo</h2>
+
+<form class="button_update_pld_form" action="/algoexecute" method="post">
+  <div class="button_update_pld_container">
+    <select name="ground" id="ground">
+        <option value="sol_example_1.json">Ground 1</option>
+        <option value="sol_example_2.json">Ground 2</option>
+    </select>
+    <select name="plants" id="plants">
+      {% for name in list_name %}
+        <option value="{{ name }}">{{ name }}</option>
+      {% endfor %}
+    </select>
+    <select name="requests" id="requests">
+        <option value="req_example_1.json">Request 1</option>
+        <option value="req_example_2.json">Request 2</option>
+    </select>
+    <button class="button_update_pld" type="submit" id="button_update_pld">Tester l'algo</button>
+  </div>
+</form>
+
+
+{% endblock %}

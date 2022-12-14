@@ -1,0 +1,302 @@
+{
+  "requests": [
+    {
+      "insertText": {
+        "text": "Sommaire\n",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "updateTextStyle": {
+        "textStyle": {
+          "bold": true,
+          "fontSize": {
+            "magnitude": 28,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.88,
+                "red": 0.88,
+                "green": 0.70
+              }
+            }
+          },
+          "weightedFontFamily": {
+            "fontFamily": "Neuton",
+            "weight": 400
+          },
+          "underline": false
+        },
+        "fields": "bold,fontSize,foregroundColor,weightedFontFamily,underline",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 9
+        }
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "paragraphStyle": {
+          "alignment": "START"
+        },
+        "fields": "alignment",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 9
+        }
+      }
+    },
+    {
+      "insertSectionBreak": {
+        "sectionType": "NEXT_PAGE",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Promo 2023\n",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "updateTextStyle": {
+        "textStyle": {
+          "bold": true,
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.93,
+                "red": 0.84,
+                "green": 0.77
+              }
+            }
+          },
+          "weightedFontFamily": {
+            "fontFamily": "Neuton",
+            "weight": 400
+          },
+          "underline": false
+        },
+        "fields": "bold,fontSize,foregroundColor,weightedFontFamily,underline",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 11
+        }
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "paragraphStyle": {
+          "alignment": "CENTER"
+        },
+        "fields": "alignment",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 11
+        }
+      }
+    },
+    {
+      "insertSectionBreak": {
+        "sectionType": "CONTINUOUS",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Agrothink\n",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "updateTextStyle": {
+        "textStyle": {
+          "bold": true,
+          "fontSize": {
+            "magnitude": 28,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.93,
+                "red": 0.84,
+                "green": 0.77
+              }
+            }
+          },
+          "weightedFontFamily": {
+            "fontFamily": "Neuton",
+            "weight": 400
+          },
+          "underline": false
+        },
+        "fields": "bold,fontSize,foregroundColor,weightedFontFamily,underline",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 10
+        }
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "paragraphStyle": {
+          "alignment": "CENTER"
+        },
+        "fields": "alignment",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 10
+        }
+      }
+    },
+    {
+      "insertSectionBreak": {
+        "sectionType": "CONTINUOUS",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Project Log Document\n",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "updateTextStyle": {
+        "textStyle": {
+          "bold": true,
+          "fontSize": {
+            "magnitude": 28,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.93,
+                "red": 0.84,
+                "green": 0.77
+              }
+            }
+          },
+          "weightedFontFamily": {
+            "fontFamily": "Neuton",
+            "weight": 400
+          },
+          "underline": false
+        },
+        "fields": "bold,fontSize,foregroundColor,weightedFontFamily,underline",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 21
+        }
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "paragraphStyle": {
+          "alignment": "CENTER"
+        },
+        "fields": "alignment",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 21
+        }
+      }
+    },
+    {
+      "insertSectionBreak": {
+        "sectionType": "CONTINUOUS",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "insertSectionBreak": {
+        "sectionType": "CONTINUOUS",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "insertText": {
+        "text": "Epitech Innovative Project\n",
+        "location": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "updateTextStyle": {
+        "textStyle": {
+          "bold": true,
+          "fontSize": {
+            "magnitude": 28,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.93,
+                "red": 0.84,
+                "green": 0.77
+              }
+            }
+          },
+          "weightedFontFamily": {
+            "fontFamily": "Neuton",
+            "weight": 400
+          },
+          "underline": false
+        },
+        "fields": "bold,fontSize,foregroundColor,weightedFontFamily,underline",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 27
+        }
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "paragraphStyle": {
+          "alignment": "CENTER"
+        },
+        "fields": "alignment",
+        "range": {
+          "startIndex": 1,
+          "endIndex": 27
+        }
+      }
+    },
+    {
+      "insertSectionBreak": {
+        "sectionType": "CONTINUOUS",
+        "location": {
+          "index": 1
+        }
+      }
+    }
+  ]
+}

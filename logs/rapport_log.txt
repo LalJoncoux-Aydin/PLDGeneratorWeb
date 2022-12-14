@@ -1,0 +1,152 @@
+*21/03/2021 - Rapport d’avancement pour le KickOff du premier sprint*
+Lors de la Forward, nous avons développé un prototype de notre projet permettant de choisir certains types de culture par rapport à des paramètres test entrés par l'utilisateur et une base de données test.
+Nous avons aussi mis en place un Workflow avec l'aide d'outils comme Gitlab et Airtable, ainsi qu’une norme de commit.
+L’objectif derrière la mise en place de ces outils est double.
+Cela doit d’abord permettre d’assurer un suivi en temps réel de l'avancement du projet à 360°. Cela doit aussi garantir l'équilibre entre autonomie pour les développeurs et intégration des fonctionnalités dans le projet.
+Le choix des technologies utilisées pour ce prototype ne nous semblent pas/plus approprié. En effet, en s'appuyant sur l'expérience acquise lors du projet pAREA (projet de 3ème année à Epitech), qui se voulait être un prototype de notre EIP en terme d’architecture, nous considérons la possibilité de changer de technologies au vu des problèmes inhérents à celles-ci.
+Nous avons pris la décision d’organiser des follow-ups en interne, afin de s'assurer de la bonne avancée du projet. La fréquence de ces rendez-vous reste à définir, nous tâcherons de l'adapter en fonction des besoins lors de ce premier sprint.
+*04/06/2021 -Rapport d’avancement pour le sprint*
+Les fonctionnalités d’inscription et de connexion ont été mises en place. L’utilisateur peut désormais créer un compte en s’inscrivant ou avec une autre plateforme grâce à l’Oauth. Les données de l’utilisateur sont envoyées par la plateforme web vers l’API où elles sont traitées puis stockées dans la base de données mise en place.
+Ce compte lui permet de se connecter. Lors de la connexion, la plateforme web fait alors une demande à l’API afin de vérifier l’identité de l’utilisateur. Si le compte est vérifié, l’utilisateur a alors accès à la plateforme dont notamment la page profil, où il peut modifier son mot de passe ou supprimer son compte.
+S’il a oublié son mot de passe, il peut en faire la demande sur la page de connexion.
+D’un point de vue plus technique, l’environnement qui va permettre à toute l’équipe de développer tout au long du projet a été mis en place, c’est-à-dire
+ le docker
+l'hébergement
+la norme pour la gestion des branches
+la politique de tests
+le CI/CD (développement continue)
+la documentation permettant le travail collaboratif
+Pour donner un peu plus de précision au niveau de l’hébergement, nous avons mis en place 2 serveurs.  Le premier qui permet de faire tourner l’API, un dashboard de monitoring et qui permettra de stocker prochainement l’algorithme. Le deuxième qui permet de faire tourner la plateforme web (back et front).
+Ce dashboard de monitoring permet d’avoir un indicateur de l’utilisation de la RAM et de l’espace de stockage du disque, ainsi que des indicateurs de l’état d’activité de  l’API, et du côté web du back et du front. Cet outil nous permet de redémarrer les différentes parties du projet grâce à des boutons directement sur l’interface.
+Nous avons aussi mis en place une solution d'intégration et de développement continu nous permettant ainsi de s'assurer que tous les services sont opérationnels avant de les déployer automatiquement sur leur serveur respectif.
+*08/07/2021 -Rapport d’avancement pour le début du sprint Management*
+Après avoir remis en question la faisabilité de notre projet et après avoir eu des retours des personnes concernées,   nous avons par conséquent  décidé de réorienter les objectifs de notre projet autour de la thématique de la faisabilité et de  l’utilité, notamment en intégrant une partie sur l’IOT dont l’objectif serait de venir communiquer avec les machines d’agriculteurs pour en récupérer les données et potentiellement les améliorer. Ou en ayant prévu une partie de recherches dont l’objectif est de rencontrer des personnes du milieu, monter en compétences, et préparer des documents récapitulatif des informations.
+Les objectifs du dernier sprint ont été remplis dans leur globalité.
+Les prochaines objectifs de ce sprint sont :
+ Créer une base de connaissance solide via les recherches et les entretiens avec des personnes du milieu agricole afin d’avoir un bagage de connaissance suffisant pour d’aborder la suite de notre projet
+Monter en compétences à travers la recherche.
+ Démontrer la faisabilité de l’algorithme et de la partie IOT à travers les différents entretiens fait avec les professionnels
+
+
+L’équipe sera répartie selon les parties suivantes :
+Web : Manon et Camille
+Algo : Louis et JC
+IOT : Zoé et Lal
+Etant donnée que cette partie de recherche et de test de faisabilité se terminera à la fin du sprint, les travaux avancés sur l'algorithme ne vont pas commencer pendant ce sprint. C’est pour cela que Louis et JC, qui sont attribués à l’algorithme, vont avancer sur l’API pendant ce sprint là. En effet, cela va permettre à l’équipe qui s’occupe du web, d’avancer de leur côté, et à Lal de mettre en place une architecture pour l’algorithme avant que les réels travaux ne commencent.
+Pour plus de détail, veuillez consulter le lien ci dessous :
+https://drive.google.com/file/d/1GiiO8Hgk4ZPv9TWejLjq3k9vfYy3AHuC/view?usp=sharing
+*07/09/2021 -Rapport d’avancement pour le  sprint management*
+Lors de ce sprint, nous avons réalisé de multiples questionnaires. L’objectif du premier questionnaire est de récolter des informations sur les habitudes et les problématiques des agriculteurs. Le second est destiné aux constructeurs d’IOT ainsi que des développeurs afin d’obtenir des informations sur l’IOT et exploiter du matériel. Le troisième questionnaire vise la future clientèle afin d’avoir des retours sur les fonctionnalités de notre application, ainsi que de récolter des informations sur les types de données dont nous aurions besoin pour notre application.
+
+Au niveau du backend, nous avons changé la base de données. Auparavant, la base de donnée était hébergée sur Azure. Cependant, après quelques mois d’utilisation le prix devenait trop élevé. Nous avons donc décidé de créer notre propre base de données et de l'intégrer  sur Docker.
+
+Pour l’API, nous avons mis en place des routes permettant d’ajouter, modifier, supprimer et lire des parcelles et données utilisateur. Nous avons également ajouté des routes pour ajouter, modifier, supprimer certains outils de l’utilisateur.
+
+Nous avons également bien avancé la partie interface utilisateur pour le web. Nous avons mis en place des pages pour consulter ses données personnelles, une page pour entrer/paramétrer/voir de nouveaux outils, une page d’accueil, une vitrine de vente ainsi qu’une page de présentation de notre projet.
+Finalement, nous avons représenté à l’aide d’un diagramme UML le fonctionnement de notre algorithme ainsi qu’un prototypage des étapes de l’algorithme.
+*14/11/2021 -Rapport d’avancement pour le  kick off sprint Fast Forward*
+Pour ce début de sprint Fast Forward, nous sommes enfin passé à la partie développement. Nous avons tout d’abord élaboré une liste de fonctionnalités que nous aimerions avoir pour notre Bêta. Selon les besoins de cette Bêta, nous avons découpé notre charge de travail.
+Tout d’abord la partie IOT se compose de deux parties, la partie hardware et la partie réseau. Pour la partie réseau, des recherches ont été faites sur la mise en place d’un serveur FTP suivant la technologie LoRa qui permettra de communiquer avec des objets connectés. L’objectif est de le mettre en place d’ici la fin du sprint.
+Pour la partie hardware, la demande de matériel a été faite. Deux propositions de PLD ont été également faites si le matériel n’est pas reçu à temps. Si le matériel est reçu à temps, l’objectif sera de prototyper les différents capteurs. Dans le cas contraire, il faudra qu’un minimum de matériel (câble, carte réseau et arduino) devra être acheté de notre côté pour pouvoir commencer à coder ses composants et tester le fonctionnement du serveur FTP.
+
+Pour la partie API, il est temps de passer au cœur du projet : la mise en place des solutions alternatives. Afin de proposer des choix précis et personnalisés à nos clients, nous avons écrit un UML de fonctionnement d’un arbre de décision. Dépendant des réponses apportées par l’agriculteur, l'arbre décisionnel va proposer soit des solutions extérieures (appel à un prestataire externe ou récupération de données d’API externes) soit faire appel à l'algorithme. Le prototypage de l’arbre décisionnel a été commencé.
+Pour ce qui est de l’algorithme, la première tâche est d’avoir de nombreuses données à utiliser. La recherche de données à rajouter dans la base de données a été commencée.
+
+Enfin pour la partie Web, afin de permettre à cet arbre décisionnel de fonctionner, un formulaire doit être mis en place, ainsi de différentes pages permettant de visualiser les résultats et les données obtenus. Pour le moment, le formulaire a commencé à être maquetté. Dans un souci d’optimisation, il a également été décidé de supprimer le front web et d’intégrer le formatage des données à l’API directement. Une structure full stack Next.Js a commencé à être mise en place dans ce but.
+
+Et pour finir, un temps est accordé dans ce sprint pour l’amélioration des structures techniques existantes : mise en place de code reviews, de tests et d’amélioration du workflow de développement.
+*26/11/2021 -Rapport d’avancement pour le  follow up  Fast Forward*
+Pour ce follow up de sprint Fast Forward, nous avons estimons pouvoir réunir les différentes parties du projet et les faire fonctionner ensemble d’ici la fin du sprint ou le début du prochain.
+Pour la partie IOT, le serveur a été mis en place, son fonctionnement peut être démontré mais pas encore testé car nous ne disposons pas du matériel. Le minimum de matériel nécessaire pour réaliser la partie hardware, n’a pas été reçu à temps. Nous avons donc décidé de rajouter pour Zoé la tâche 6.5.1 qui consiste à réaliser les maquettes des pages restantes pour le web, et la tâche 5.1.4 qui consiste à remplir une base de données sur les engrais et les pesticides. La tâche 5.1.2 a aussi été modifiée, les personnes assignés n’étant plus Zoé et Lal mais que Zoé. La tâche 5.1.3 a également été modifiée,  les personnes assignés n’étant plus Zoé et Lal mais que Lal. Ses modifications permettront à Zoé d’atteindre les 7JH nécessaires pour le FU.
+
+Pour la partie API, l'arbre décisionnel et les routes qui permettent l’accessibilité à l’algorithme (successivement les tâches 4.1.1 et 5.1.1) avancent au même rythme, l’avancée est assez conséquente pour être catégorisée comme “en cours/doing”.
+Pour la partie algorithmie, la liaison avec l’API n’a pas encore été effectuée mais des fonctions génériques qui génèrent des pourcentages de probabilité pour chaque combinaison de set de données ont été créées. Les tests fonctionnels sont encore à produire. Les set de données pour les plantes/symbiose des plantes/sol et les engrais/pesticides ont été remplis.
+Pour la partie web, ont été créés le formulaire d’aide à la décision, ainsi que les pages de détail des informations de l’utilisateur, d’affichage de l’emploi du temps, et d’insertion d’outils. La liaison avec le back n’est pas encore opérationnelle, et le site n’est pas encore documenté pour l’utilisateur.
+Pour ce qui est de l’amélioration des structures techniques existantes, le docker a été amélioré pour permettre un développement plus facile aux autres membres de l’équipe, notamment ne pas avoir à recompiler à chaque modification, et les parties manquantes ont été ajoutées.
+A été mis en place un système de code review, ainsi qu’un bot pour réguler la mise en place de cette pratique régulièrement.
+La partie web a été refactorisé pour plus de lisibilité et d’optimisation. Des tests ont également été mis en place pour permettre une maintenabilité du code.
+Enfin le workflow a été renforcé par l’intégration d’une norme et la ré-attribution certaines tâches de management pour avoir une écriture d’issues standardisée au début du sprint et des tests réguliers.
+Pour finir, nous avons accueilli un nouveau membre dans notre groupe qui va débuter la partie mobile du projet. Ainsi ses tâches jusqu’au delivery du sprint seront de rattraper le plus possible l’avancée du web.
+*08/01/2022 -Rapport d’avancement pour le  delivery Fast Forward*
+Malgré la non réception de notre matériel dans les temps, nous avons tout de même pu avancer dans la réalisation de notre projet EIP.
+Pour la partie API,  l'arbre décisionnel et les routes qui permettent l’accessibilité à l’algorithme ont été terminées.  Les routes pour accéder aux questions de l’arbre décisionnel ont également été terminées.
+La partie mobile du projet a été démarrée. Nous avons pour le moment les pages suivantes:
+-Accueil
+-Inscription/Connection
+-Mot de passe oublié
+-Page de formulaire
+-Localiser sa parcelle
+Côté web, une documentation a été créée.  Nous avons également créé un formulaire utilisateur lors de l’inscription, ainsi qu’une  page de présentation des offres/prise d’abonnement.
+*14/02/2022 -Rapport d’avancement pour le  KickOff du sprint Growth Hacking*
+Pour ce début de sprint Growth Hacking, nous avons tout d’abord fini  la liste de fonctionnalités que nous aimerions avoir pour notre Bêta. Selon les besoins de cette Bêta, nous avons découpé notre charge de travail.
+
+Pour la partie Web, une page du tableau de bord a été développé avec les fonctionnalités suivantes :
+- Partie  Météo Web :
+	- Affichage de la météo en fonction de la géolocalisation de l’utilisateur avec les détails sur l’humidité, le vent, la température minimale et maximale, la météo des 5 prochains jours, la température par heure, l’heure du lever et coucher  du soleil, le pourcentage de nuage et la pression atmosphérique.
+- Système de notifications
+- Partie  Widget Web:
+	- Possibilité de modifier la couleur de la plateforme
+	- Possibilité d’ajouter un fond d’écran sur la plateforme ou non
+- Partie Actualités Web:
+	- Affichage des actualités d’aujourd’hui et des derniers jours sur l’agriculture avec les détails: Source, Auteur, Image de l’article, Titre de l’article, Description de l’article, Lien de l’article.
+	- Affichage de ces actualités sous forme de carrousel (slider)
+- Partie  Lois Web:
+	- Affichage des lois de 2019 à 2022 sur l’agriculture sous forme de carrousel (Date, Description, Lien de l’article sur le site du Sénat)
+Ensuite une page d’installation de l’APK a été développée sur le Web avec un tutoriel sur le téléchargement et l’installation de l’APK depuis le web. Le projet Web a commencé à être nettoyé et Bootstrap a été ajouté. Une documentation technique est en cours de développement.
+
+Pour la partie Qualité du code, une amélioration des issues et des branches a été faite et une timeline a été créée rassemblant chaque tâches de chaque membre en fonction de la date.
+
+Pour la partie Mobile, la liaison de l’API et du mobile est terminée.
+
+Pour la partie Mobile et Web, la création de variables des textes des deux plateformes dans un .JSON est faite, il reste à l’intégrer dans la plateforme Web.
+Partie API:
+Fix de routes API beuguées (outils notamment). Ajout et modifications de routes pour le profil utilisateur afin de fournir des données supplémentaires (nom, prénom, date de naissance…). Ajout de routes pour les jardins/pots.
+L’étude de marché est en cours pour l’application est en cours.  Les propositions faites aux agriculteurs avec l’arbre sont définies et plusieurs fonctions sont à créer (liste) pour finir l’ hébergement et la  certification SSL
+*14/02/2022 -Rapport d’avancement pour le  follow up du sprint Growth Hacking*
+Partie mobile : Création d’un figma avec le design pour chaque page, le figma permet également de voir un aperçu du css, cela facilite donc la création de l’interface utilisateur.
+Amélioration du design pour les pages de connexion (sign in, sign up), en accord avec le design créé sur le figma.
+Création des pages  “page d’accueil connecter”, “mon jardin” et “nouveau jardin” non connecter au back. Avec des données rentrées en dur dans le front. Le design correspond au figma, il manque encore quelques interactions non liées encore.
+Création des pages “conseils”, et "recommandations", non reliées au back, des changements vont continuer d'être ajoutés afin d’améliorer le design globale, mais toute la partie expérience utilisateur (pouvoir trier les recommandations par ordre d’importance) est faite et la plus part de la partie interface utilisateur est faite.
+
+Partie web : Mise en place de l'abonnement avec création du compte Stripe pour la partie paiement. Non relié à un réel compte en banque mais le mode test marche bien.
+Le code à été nettoyé pour une meilleure compréhension globale du code et une limitation des bugs.
+Une documentation technique a été créée pour les pages existantes.
+La liaison avec l’API a commencé, il manque toujours certains appels.
+Design de la page recommandation améliorer, il manque la partie algorithme pour la compléter.
+Page de téléchargement de l’APK faite avec instruction claire, APK non créer encore par la partie mobile cependant.
+La page de gestion des outils a été améliorée, il manque la route avec l’API pour la finir.
+
+Partie api: A l’approche de la bêta, nous avons fait un point sur les différentes faiblesses de notre API. Nous avons donc créé un fichier excel afin de s’assurer que toute  l’api soit sécurisée,  normée et testée. Des tests unitaires pour la gestion des comptes ont été mis en place. Nous avons aussi créé une norme de réponse afin que tout soit uniformisé. Nous avons mis en place les requêtes nécessaires pour les différents niveaux d'abonnements.
+Nous avons dû aussi faire face à un problème au niveau du fournisseur de la machine de l’api, nous avons perdu toutes les données du serveur. Après quelques jours, une nouvelle machine a été mise en place afin d'héberger l’API. (Installation, configuration, mise en route). Nous ajoutons également des routes au fur et a mesure des besoins du mobile et du web.
+
+Partie algo: Des recommandations suivant les choix de l'arbre décisionnel ont été définies, elles vont permettre à l'utilisateur d’améliorer ses plantations.
+*07/05/2022-Rapport d’avancement pour  le delivery  du sprint B&GH*Partie mobile:
+Durant ce sprint, le mobile a été lié à l’api, l'envoie de données et la réception de données.
+Les visuels des pages ont été améliorés.
+Les pages nombre de pots et création d’un jardin ont été débugger.
+Lier les deux parties du mobile (Partie de Rachid avec la partie de Zoé).
+
+Mon jardin affiche la météo et la température grâce à un call API.
+Page recommandation améliorée avec une partie tri par importance des tâches.
+Page d’accueil non connectée créée.
+Page conseil créé.
+
+Partie Api:
+Durant ce sprint, nous avons concentré nos efforts sur une amélioration de l'API, en effet nous avons dans un premier temps mis un place une standardisation des réponses envoyer par l'api cela permet une utilisation simplifiée.
+Nous avons ensuite amélioré la gestion d'erreur et mis en place des tests unitaires pour l'ensemble des routes.
+
+L'équipe en charge du web et du mobile nous a demandé de modifier du code existant, nous avons dû faire des ajustements supplémentaires afin de répondre à leurs besoins.
+Nous avons créé des routes afin de pouvoir ajouter des cultures à la base de données.
+
+Nous avons dû aussi réinstaller un serveur pour le déploiement car l'entreprise qui nous loue le serveur a eu un problème en interne.
+
+Partie Web :
+Durant ce sprint, toutes les liaisons entre l’API et le web ont été faites et réparées. La page de recommandation a été améliorée en ajoutant les recommandations de l’algorithme concernant les plantes de la parcelle, la parcelle scannée est ajoutée. La page d’accueil a été améliorée en ajoutant les rendez-vous de l’utilisateur rentrés dans la section emploie du temps. Un écran de chargement a été ajouté lors de l’exécution de l’algorithme pour accéder aux recommandations. La page d’outil a été améliorée et liée à la l’API, nous avons désormais de multiples choix d’outils avec leur marque. Un nouveau menu a été ajouté pour afficher les multiples associations de permaculture. Une page permettant de renseigner ses cultures a été faite.
+
+Partie Algo :
+Durant ce sprint, les algorithmes mobile et web ont été créés et sont fonctionnels. Liés à l’API, les données sont renvoyées formatées.
+Les bases de données ont été remplies d’avantage.
+Des tests ont été écrits.
+
+Partie Automatisation du PLD :
+Ce PLD a été généré automatiquement
